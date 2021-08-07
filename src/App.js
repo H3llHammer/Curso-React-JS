@@ -1,13 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-import {EventosES6, EventosES7, MasSobreEventos} from './components/Eventos';
-import RenderizadoCondicional from './components/RenderizadoCondicional';
-import ComunicacionComponentes from './components/ComunicacionComponentes';
-import CicloVida from './components/CicloVida';
-import AjaxApis from './components/AjaxApis';
-import ContadorHooks from './components/ContadorHooks';
-import ScrollHooks from './components/ScrollHooks';
-import RelojHooks from './components/RelojHooks';
+import logo from "./logo.svg";
+import "./App.css";
+import { EventosES6, EventosES7, MasSobreEventos } from "./components/Eventos";
+import RenderizadoCondicional from "./components/RenderizadoCondicional";
+import ComunicacionComponentes from "./components/ComunicacionComponentes";
+import CicloVida from "./components/CicloVida";
+import AjaxApis from "./components/AjaxApis";
+import ContadorHooks from "./components/ContadorHooks";
+import ScrollHooks from "./components/ScrollHooks";
+import RelojHooks from "./components/RelojHooks";
+import AjaxHooks from "./components/AjaxHooks";
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           Learn React
         </a>
       </header>
@@ -45,6 +47,8 @@ function App() {
       <ScrollHooks />
       <br />
       <RelojHooks />
+      <br />
+      <AjaxHooks />
     </div>
   );
 }
