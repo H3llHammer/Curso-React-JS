@@ -1,25 +1,25 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from "react";
 
 export default function ScrollHooks() {
   const [scrollY, setScrollY] = useState(0);
   useEffect(() => {
-    console.log('Moviendo el scroll');
+    //    console.log('Moviendo el scroll');
     const detectarScroll = () => {
       setScrollY(window.pageYOffset);
     };
-    window.addEventListener('scroll', detectarScroll);
-    return () => window.removeEventListener('scroll', detectarScroll);
+    window.addEventListener("scroll", detectarScroll);
+    return () => window.removeEventListener("scroll", detectarScroll);
   });
 
   useEffect(() => {
-    console.log('Fase de Montaje');
+    //console.log('Fase de Montaje');
   }, []);
 
   useEffect(() => {
-    console.log('Fase de actualizacion');
+    //console.log('Fase de actualizacion');
   });
   useEffect(() => {
-    return () => console.log('Fase de desmontaje');
+    //return () => console.log('Fase de desmontaje');
   });
   return (
     <>
