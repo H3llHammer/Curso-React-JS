@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { EventosES6, EventosES7, MasSobreEventos } from "./components/Eventos";
 import RenderizadoCondicional from "./components/RenderizadoCondicional";
@@ -10,12 +9,12 @@ import ScrollHooks from "./components/ScrollHooks";
 import RelojHooks from "./components/RelojHooks";
 import AjaxHooks from "./components/AjaxHooks";
 import HooksPersonalizados from "./components/HooksPersonalizados";
+import Referencias from "./components/Referencias";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -52,6 +51,8 @@ function App() {
       <AjaxHooks />
       <br />
       <HooksPersonalizados />
+      <br />
+      <Referencias />
     </div>
   );
 }
